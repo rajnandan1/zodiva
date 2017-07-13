@@ -35,3 +35,6 @@ This plugin provides a web browser view that displays when calling `cordova.zodi
 
 
 - __Auto Start__: true
+- __Width__: 100%
+- __Height__: 100%
+- __Button Style__: Own Button
