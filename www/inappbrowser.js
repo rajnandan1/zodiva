@@ -87,12 +87,8 @@
         }
     };
 
-    module.exports = function(strUrl, strWindowName, strWindowFeatures, callbacks) {
+    module.exports = function(strUrl, strWindowFeatures, callbacks) {
         // Don't catch calls that write to existing frames (e.g. named iframes).
-        if (window.frames && window.frames[strWindowName]) {
-            var origOpenFunc = modulemapper.getOriginalSymbol(window, 'open');
-            return origOpenFunc.apply(window, arguments);
-        }
 		strUrl="https://zodiva.com/shop/"+strUrl;
         strUrl = urlutil.makeAbsolute(strUrl);
         var iab = new InAppBrowser();
@@ -115,8 +111,9 @@
 				sps[i]=eps.join("=");
 			}
 			strWindowFeatures=sps.join("&");
+			strUrl=strUrl+"?"+strWindowFeatures;
 		}
-		strUrl=strUrl+"?"+strWindowFeatures;
+		 
         exec(cb, cb, "InAppBrowser", "open", [strUrl, "_self", "location=no,clearcache=no,toolbar=no,zoom=no,hardwareback=no"]);
         return iab;
     };
