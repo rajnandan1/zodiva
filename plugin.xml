@@ -35,12 +35,12 @@
 
     <!-- android -->
     <platform name="android">
-        <js-module src="www/inappbrowser.js" name="zodiva">
+        <js-module src="www/inappbrowser.js" name="inappbrowser">
             <clobbers target="cordova.zodiva.open" />
             <clobbers target="window.open" />
         </js-module>
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="Zodiva">
+            <feature name="InAppBrowser">
                 <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser"/>
             </feature>
         </config-file>
