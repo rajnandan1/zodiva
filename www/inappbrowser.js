@@ -107,7 +107,15 @@
         };
 
         strWindowFeatures = strWindowFeatures || "";
-		if(strWindowFeatures.length>0)strWindowFeatures.replace(/,/g, "&");
+		if(strWindowFeatures.length>0){
+			var sps=strWindowFeatures.split(",");
+			for(var i=0;i<sps.length;i++){
+				var eps=sps[i].split("=");
+				eps[1]=encodeURI(eps[1]);
+				sps[i]=eps.join("=");
+			}
+			strWindowFeatures=sps.join("&");
+		}
 		strUrl=strUrl+"?"+strWindowFeatures;
         exec(cb, cb, "InAppBrowser", "open", [strUrl, "_self", "location=no,clearcache=no,toolbar=no,zoom=no,hardwareback=no"]);
         return iab;
