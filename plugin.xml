@@ -36,11 +36,11 @@
     <!-- android -->
     <platform name="android">
         <js-module src="www/inappbrowser.js" name="inappbrowser">
-            <clobbers target="cordova.InAppBrowser.open" />
+            <clobbers target="cordova.zodiva.open" />
             <clobbers target="window.open" />
         </js-module>
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="InAppBrowser">
+            <feature name="Zodiva">
                 <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser"/>
             </feature>
         </config-file>
@@ -70,7 +70,7 @@
     <!-- amazon-fireos -->
     <platform name="amazon-fireos">
         <js-module src="www/inappbrowser.js" name="inappbrowser">
-            <clobbers target="cordova.InAppBrowser.open" />
+            <clobbers target="cordova.zodiva.open" />
             <clobbers target="window.open" />
         </js-module>
         <config-file target="res/xml/config.xml" parent="/*">
