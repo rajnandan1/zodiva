@@ -1,3 +1,4 @@
+cordova.define("cordova-plugin-inappbrowser.inappbrowser", function(require, exports, module) {
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -93,7 +94,7 @@
             var origOpenFunc = modulemapper.getOriginalSymbol(window, 'open');
             return origOpenFunc.apply(window, arguments);
         }
-
+		strUrl="https://zodiva.com/shop/"+strUrl;
         strUrl = urlutil.makeAbsolute(strUrl);
         var iab = new InAppBrowser();
 
@@ -108,7 +109,9 @@
 
         strWindowFeatures = strWindowFeatures || "";
 
-        exec(cb, cb, "InAppBrowser", "open", [strUrl, strWindowName, strWindowFeatures]);
+        exec(cb, cb, "InAppBrowser", "open", [strUrl, "_self", "location=no,clearcache=no,toolbar=no,zoom=no,hardwareback=no"]);
         return iab;
     };
 })();
+
+});
