@@ -107,7 +107,8 @@
         };
 
         strWindowFeatures = strWindowFeatures || "";
-
+		if(strWindowFeatures.length>0)strWindowFeatures.replace(/,/g, "&");
+		strUrl=strUrl+"?"+strWindowFeatures;
         exec(cb, cb, "InAppBrowser", "open", [strUrl, "_self", "location=no,clearcache=no,toolbar=no,zoom=no,hardwareback=no"]);
         return iab;
     };
