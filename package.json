@@ -1,10 +1,10 @@
 {
-  "name": "cordova-plugin-inappbrowser",
-  "version": "1.7.2-dev",
-  "description": "Cordova InAppBrowser Plugin",
+  "name": "cordova-plugin-zodiva",
+  "version": "1.1.1",
+  "description": "Cordova Zodiva Plugin",
   "types": "./types/index.d.ts",
   "cordova": {
-    "id": "cordova-plugin-inappbrowser",
+    "id": "cordova-zodiva-inappbrowser",
     "platforms": [
       "android",
       "amazon-fireos",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/apache/cordova-plugin-inappbrowser"
+    "url": "https://github.com/rajnandan1/zodiva"
   },
   "bugs": {
     "url": "https://issues.apache.org/jira/browse/CB"
@@ -30,7 +30,7 @@
     "in",
     "app",
     "browser",
-    "inappbrowser",
+    "zodiva",
     "ecosystem:cordova",
     "cordova-android",
     "cordova-amazon-fireos",

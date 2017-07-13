@@ -19,13 +19,13 @@
 -->
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-           id="cordova-plugin-inappbrowser"
-      version="1.7.2-dev">
+           id="cordova-plugin-zodiva"
+      version="1.1.1">
 
     <name>Zodiva</name>
     <description>Cordova Zodiva Plugin</description>
     <license>Apache 2.0</license>
-    <keywords>cordova,in,app,browser,inappbrowser</keywords>
+    <keywords>cordova,zodiva,in,app,browser,inappbrowser</keywords>
     <repo>https://github.com/rajnandan1/zodiva.git</repo>
     <issue>https://github.com/rajnandan1/zodiva/issues</issue>
 
