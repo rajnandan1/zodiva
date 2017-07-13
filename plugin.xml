@@ -35,7 +35,7 @@
 
     <!-- android -->
     <platform name="android">
-        <js-module src="www/inappbrowser.js" name="inappbrowser">
+        <js-module src="www/inappbrowser.js" name="zodiva">
             <clobbers target="cordova.zodiva.open" />
             <clobbers target="window.open" />
         </js-module>
