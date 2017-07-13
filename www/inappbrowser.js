@@ -1,4 +1,3 @@
-cordova.define("cordova-plugin-zodiva.inappbrowser", function(require, exports, module) {
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -113,5 +112,3 @@ cordova.define("cordova-plugin-zodiva.inappbrowser", function(require, exports, 
         return iab;
     };
 })();
-
-});
