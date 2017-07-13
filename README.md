@@ -29,3 +29,9 @@ This plugin provides a web browser view that displays when calling `cordova.zodi
 
     var ref = cordova.zodiva.open('username');
 
+> To get username, first you will have to sign up on https://zodiva.com/psa and then customize the chat widget. 
+
+# set these options
+
+
+- __Auto Start__: true
