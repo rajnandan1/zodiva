@@ -63,7 +63,7 @@ Select `Customize` from left side menu. Most of the things here are for the JS w
 
 # QUESTION SET 
 
-These are the questions _(option based)_ that are shown to the user to capture additional information before even a stylist connetcs with him
+Under `Customize` from left side menu. These are the questions _(option based)_ that are shown to the user to capture additional information before even a stylist connetcs with him
 
 - __Choose a Question__: Select an option that you have already entered in the section above.
 - __Add a Question__: Use this to add questions under that option for the user, to be asked by the zodiva bot just after the session starts.
