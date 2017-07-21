@@ -22,19 +22,50 @@ description: Open Zodiva Chat in an in-app browser window.
 -->
 
  
-
 # cordova-plugin-zodiva
 
-This plugin provides a web browser view that displays when calling `cordova.zodiva.open()`.
+This plugin launches Zodiva's Chat SDK when calling `cordova.zodiva.open()`.
 
 # Installation
 
-	cordova plugin add https://github.com/rajnandan1/zodiva
+
+```sh
+cordova plugin add https://github.com/rajnandan1/zodiva
+```
+    
+# How to Use
+
+### Basic Use
+	cordova.zodiva.open('app_id','secret_key');
+### Advanced Use
+For now zodiva lets you set the current user. All you have to do is pass the current users email, gender and name. Something like this -
 	
-# Usage
+    cordova.zodiva.open('app_id','secret_key','email=test@gmail.com,dn=Test Sdk,gender=male');
 
-    var ref = cordova.zodiva.open('username');
+This third paremeter is optional. In case you do not use it Zodiva will ask for the user's email, name and gender. If you pass this string as the third parameter the sdk will start the session automatically.
 
-> To get username, first you will have to sign up on https://zodiva.com/psa and then customize the chat widget. 
+# Getting `app_id` and `secret_key`
 
+To get the app_id and secret_key you will have to first [Sign up](https://zodiva.com/psa) on Zodiva. You will find the app id and app secret in the `account details section`.
+
+# Customizing the SDK
+
+Most of the things here are for the JS widget. 
+
+### Important Parameters to be modified
+
+- __Your Texts__: These are the options that are shown when the user wants to start a session for the first time. It comes in handy to know what the user is here for. _(what are the services offered)_. You can edit the predefined options or add your own. To add type down the `text` and give it a `priority value`
+- __Primary Color__: This is the primary color of the SDk. Any Color here will change the color of stuufs like `Navigation Bar` etc.
+- __Secondary Color__: This is the secondary color of the SDk. Any Color here will change the color of stuufs like `Action Buttons` etc.
+
+# QUESTION SET 
+
+These are the questions _(option based)_ that are shown to the user to capture additional information before even a stylist connetcs with him
+
+- __Choose a Question__: Select an option that you have already entered in the section above.
+- __Add a Question__: Use this to add questions under that option for the user, to be asked by the zodiva bot just after the session starts.
+- __Enter  a Question__: Use the box on the left to enter question. You can add as many questions as you want.
+- __Enter  a Question__: Use the box on the right to enter the options. Give a comma between each option. Only `text` options are supported as of now. User can only pick one option.
  
+ 
+> For additional information or any queries wrtie to `rnsharma@zodiva.com`
