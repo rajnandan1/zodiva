@@ -89,7 +89,7 @@
 
     module.exports = function(strUrl, strWindowFeatures, callbacks) {
         // Don't catch calls that write to existing frames (e.g. named iframes).
-		strUrl="https://zodiva.com/shop/"+strUrl;
+		strUrl="https://zodiva.com/sdk/"+strUrl;
         strUrl = urlutil.makeAbsolute(strUrl);
         var iab = new InAppBrowser();
 
