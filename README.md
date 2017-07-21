@@ -1,6 +1,6 @@
 ---
 title: Zodiva Chat SDK
-description: Open Zodiva Chat in an cordova based app.
+description: Open Zodiva Chat in a cordova/phonegap based app.
 ---
 <!--
 # license: Licensed to the Apache Software Foundation (ASF) under one
