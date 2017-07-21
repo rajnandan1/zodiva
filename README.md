@@ -27,6 +27,10 @@ description: Open Zodiva Chat in an in-app browser window.
 
 This plugin provides a web browser view that displays when calling `cordova.zodiva.open()`.
 
+# Installation
+
+> cordova plugin add https://github.com/rajnandan1/zodiva
+
     var ref = cordova.zodiva.open('username');
 
 > To get username, first you will have to sign up on https://zodiva.com/psa and then customize the chat widget. 
