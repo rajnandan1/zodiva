@@ -65,7 +65,7 @@ These are the questions _(option based)_ that are shown to the user to capture a
 - __Choose a Question__: Select an option that you have already entered in the section above.
 - __Add a Question__: Use this to add questions under that option for the user, to be asked by the zodiva bot just after the session starts.
 - __Enter  a Question__: Use the box on the left to enter question. You can add as many questions as you want.
-- __Enter  a Question__: Use the box on the right to enter the options. Give a comma between each option. Only `text` options are supported as of now. User can only pick one option.
+- __Enter  Options__: Use the box on the right to enter the options. Give a comma between each option. Only `text` options are supported as of now. User can only pick one option.
  
  
 
