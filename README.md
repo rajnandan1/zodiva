@@ -57,7 +57,7 @@ Select `Customize` from left side menu. Most of the things here are for the JS w
 
 ### Important Parameters to be modified
 
-- __Your Texts__: These are the options that are shown when the user wants to start a session for the first time. It comes in handy to know what the user is here for. _(what are the services offered)_. You can edit the predefined options or add your own. To add type down the `text` and give it a `priority value`
+- __Your Texts__: These are the options that are shown when a user starts a session for the first time. It helps to understand the need of the user. _(what are the services offered)_. You can edit the predefined options or add your own. To add type down the `text` and give it a `priority value`
 - __Primary Color__: This is the primary color of the SDk. Any Color here will change the color of elements like `Navigation Bar` etc.
 - __Secondary Color__: This is the secondary color of the SDk. Any Color here will change the color of elements like `Primary Buttons` etc.
 
