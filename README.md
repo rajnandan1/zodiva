@@ -37,13 +37,13 @@ cordova plugin add https://github.com/rajnandan1/zodiva
 
 ### Basic Use
 	cordova.zodiva.open('app_id','secret_key');
-> Zodiva SDK will ask for the user _ email, name and gender _
+> Zodiva SDK will ask for the user's _email, name and gender_	
 ### Advanced Use
 For now zodiva lets you set the current user. All you have to do is pass the current users email, gender and name. Something like this -
 
     cordova.zodiva.open('app_id','secret_key','email=test@gmail.com,dn=Test Sdk,gender=male');
 
-> Zodiva SDK will ask for the user _ email, name and gender _	
+> Zodiva SDK will use the  _email, name and gender_	provided by the app.
 	
 This third paremeter is optional. In case you do not use it Zodiva will ask for the user's email, name and gender. If you pass this string as the third parameter the sdk will start the session automatically.
 
