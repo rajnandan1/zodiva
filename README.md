@@ -1,6 +1,6 @@
 ---
 title: Zodiva Chat SDK
-description: Open Zodiva Chat in an in-app browser window.
+description: Open Zodiva Chat in an cordova based app.
 ---
 <!--
 # license: Licensed to the Apache Software Foundation (ASF) under one
@@ -67,5 +67,7 @@ These are the questions _(option based)_ that are shown to the user to capture a
 - __Enter  a Question__: Use the box on the left to enter question. You can add as many questions as you want.
 - __Enter  a Question__: Use the box on the right to enter the options. Give a comma between each option. Only `text` options are supported as of now. User can only pick one option.
  
+ 
+
  
 > For additional information or any queries wrtie to `rnsharma@zodiva.com`
