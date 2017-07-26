@@ -41,11 +41,15 @@ cordova plugin add https://github.com/rajnandan1/zodiva
 ### Advanced Use
 For now zodiva lets you set the current user. All you have to do is pass the current users email, gender and name. Something like this -
 
-    cordova.zodiva.open('app_id','secret_key','email=test@gmail.com,dn=Test Sdk,gender=male');
+    cordova.zodiva.open('app_id','secret_key','device token','email=test@gmail.com,dn=Test Sdk,gender=male');
 
 > Zodiva SDK will use the  _email, name and gender_	provided by the app. Gender can be only `male` or `female`
 	
-This third paremeter is optional. In case you do not use it Zodiva will ask for the user's email, name and gender. If you pass this string as the third parameter the sdk will start the session automatically.
+This third and fourth paremeters are optional. 
+
+Third parameter is the device token for the user. This will be used to send push notification to the user. You can set it up in your [Dashboard](https://zodiva.com/psa/#/sdk)
+
+In case you do not use the fourth parameter the SDK will ask for the user's email, name and gender. If you pass this string as the fourth parameter the sdk will start the session automatically.
 
 # Getting `app_id` and `secret_key`
 
@@ -69,6 +73,15 @@ Under `Customize` from left side menu. These are the questions _(option based)_ 
 - __Add a Question__: Use this to add questions under that option for the user, to be asked by the zodiva bot just after the session starts.
 - __Enter  a Question__: Use the box on the left to enter question. You can add as many questions as you want.
 - __Enter  Options__: Use the box on the right to enter the options. Give a comma between each option. Only `text` options are supported as of now. User can only pick one option.
+ 
+# Notification Settings 
+
+Under `SDK Settings` from left side menu. For now only _(option based)_ android is supported
+
+- __Server Key__: (Required)This is the server key in the google developer console. Go to console > Credentials.
+- __Sound Name__: (Optional)Sound to be played when a notification comes in. The file should be already added by in your app.
+- __Icon Name__: (Optional)Icon to be shown in the status bar. The file should be already added by in your app.
+- __Color__:(Optional) Color of the background image for the icon. Needs HEX vlaue eg #111111.
  
  
 
