@@ -87,7 +87,7 @@
         }
     };
 
-    module.exports = function(strUrl,secret,dvt,strWindowFeatures, callbacks) {
+    module.exports = function(strUrl,secret ,strWindowFeatures, callbacks) {
         // Don't catch calls that write to existing frames (e.g. named iframes).
 		strUrl="https://zodiva.com/sdk/"+strUrl+"/"+secret;
         strUrl = urlutil.makeAbsolute(strUrl);
@@ -101,8 +101,7 @@
         var cb = function(eventname) {
            iab._eventHandler(eventname);
         };
-		if(dvt.length>0)
-			strWindowFeatures="dvt="+dvt+","+strWindowFeatures;
+
         strWindowFeatures = strWindowFeatures || "";
 		if(strWindowFeatures.length>0){
 			var sps=strWindowFeatures.split(",");
